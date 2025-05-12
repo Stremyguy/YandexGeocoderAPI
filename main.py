@@ -15,7 +15,7 @@ def main() -> None:
         "apikey": "8013b162-6b42-4997-9691-77b7074026e0",
         "geocode": toponym_to_find,
         "format": "json"}
-
+    
     response = requests.get(geocoder_api_server, params=geocoder_params)
 
     if not response:
